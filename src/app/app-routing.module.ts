@@ -6,6 +6,11 @@ import { ArtComponent } from './art/art.component';
 import { FarmComponent } from './farm/farm.component';
 import { CricketComponent } from './cricket/cricket.component';
 import { ObstacleCourseComponent } from './obstacle-course/obstacle-course.component';
+import { BodyComponent } from './body/body.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+import { BookComponent } from './book/book.component';
+
 
 const routes: Routes = [
     { path: 'mosaic', component: MosaicComponent},
@@ -13,7 +18,11 @@ const routes: Routes = [
     { path: 'art', component: ArtComponent},
     { path: 'farm', component: FarmComponent},
     { path: 'cricket', component: CricketComponent},
-    { path: 'obstacle', component: ObstacleCourseComponent}
+    { path: 'obstacle', component: ObstacleCourseComponent},
+    { path: 'home', component: BodyComponent},
+    { path: 'about', component: AboutUsComponent },
+    { path: 'contact', component: ContactUsComponent },
+    { path: 'booking', component: BookComponent}
 ];
 
 @NgModule({
@@ -22,4 +31,5 @@ const routes: Routes = [
 })
 export class AppRoutingModule { }
 export const routingComponents = [MosaicComponent, DecoupageComponent, ArtComponent,
-    FarmComponent, CricketComponent, ObstacleCourseComponent]
+    FarmComponent, CricketComponent, ObstacleCourseComponent, BodyComponent, AboutUsComponent,
+    ContactUsComponent, BookComponent]

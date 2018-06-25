@@ -1,10 +1,12 @@
+<div class="grid-container">
 <div class="main-navigation">
-  <ul>
-    <li><a href="">Home</a></li>
-    <li><a href="">About Us</a></li>
-    <li><a href="">Contact Us</a></li>
+  <nav>
+    <a routerLink="/home" routerLinkActive="active">Home</a>
+    <a routerLink="/about" routerLinkActive="active">About Us</a>
+    <a routerLink="/contact" routerLinkActive="active">Contact Us</a>
     
-    <li id="book"><a href="">Book your party</a></li>
-  </ul>
+    <a id="book" routerLink="/booking" routerLinkActive="active">Book your party</a>
+  </nav>
 </div>
 <app-side-nav></app-side-nav>
+</div>
